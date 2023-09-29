@@ -1,0 +1,21 @@
+Handling inputs in javascript
+
+-> Javascript is a clint side scripting language that can accept input from browser and can handel minipulation on input value
+-> clint side input can be handled by using
+    1) prompt().
+    2) html form input elements. 
+
+
+1) prompt():
+
+-> it is a function of javascript document object.
+-> it pops up an input box in the browser that allows the user to input a value.
+-> it returns the input value when clicked "ok" and returns null when clicked "cancel"
+
+
+2) html form input elements
+
+-> html provides several elements that allow the user to input values.
+-> javascript can access the values from form elements and use in manipulation.
+-> javascript refers the emelemnts and their values dynamically by using various referance methods like name,id,...etc.
+-> Form inputs are:- Textbox,Checkbox, Radio button, ListBox, Dropdownlist..etc

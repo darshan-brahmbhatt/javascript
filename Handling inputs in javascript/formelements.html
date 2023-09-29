@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Krishna (){
+            let id=document.getElementById("ProductId").value;
+            let Name=document.getElementById("ProductName").value;
+            let Price=document.getElementById("ProductPrice").value;
+            let Made=document.getElementById("ProductManu").value;
+            let Yes=document.getElementById("StockYes");
+            let No=document.getElementById("StockNo");
+            if (Yes.checked)
+            Stock=Yes.value;
+            if (No.checked)
+            Stock=No.value;
+            let Delivery =document.getElementById("ProductShip").value;
+
+
+            document.getElementById("msgproid").innerText=id;
+            document.getElementById("msgproname").innerText=Name;
+            document.getElementById("msgproprice").innerText=Price;
+            document.getElementById("msgmani").innerText=Made;
+            document.getElementById("msgstock").innerText=Stock;
+            document.getElementById("msgship").innerText=Delivery;
+
+
+
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <form action="">
+            <fieldset id="showragister">
+                <legend>Register Form</legend>
+                <dl>
+                    <dt>Product Id</dt>
+                    <dd><input type="number" id="ProductId"></dd>
+                    <dt>Product Name</dt>
+                    <dd><input type="text" id="ProductName"></dd>
+                    <dt>Product Price</dt>
+                    <dd><input type="range" max="10000" min="1000" id="ProductPrice"</dd>
+                    <dt>Manifacturing</dt>
+                    <dd><input type="date" id="ProductManu"></dd>
+                    <dt>It is in Stock</dt>
+                    <dd>
+                    <input type="radio" name="Stock" value="available" id="StockYes">
+                    <input type="radio" name="Stock" value="Out of stock" id="StockNo"</dd>
+                    <dt>Shipped To</dt>
+                    <dd>
+                        <select name="Shipment" id="ProductShip">
+                            <option  value="Bhandu"> Bhandu</option>
+                            <option value="Mahesana">Becharaji</option>
+                        </select>
+                    </dd>
+
+                </dl>
+                <input type="button" value="Ragister" id="Ragister" onclick="Krishna()">
+            </fieldset>
+            <fieldset id="ShowDetails">
+                <legend>Product Details</legend>
+                <table width="400" border="2">
+                    <tr>
+                        <td>Product Id</td>
+                        <td id="msgproid"></td>
+                    </tr>
+                    <tr>
+                        <td>Product Name</td>
+                        <td id="msgproname"></td>
+                    </tr>
+                    <tr>
+                        <td>Product Price</td>
+                        <td id="msgproprice"></td>
+                    </tr>
+                    <tr>
+                        <td>Manifacturing</td>
+                        <td id="msgmani"></td>
+                    </tr>
+                    <tr>
+                        <td>Stock Status</td>
+                        <td id="msgstock"></td>
+                    </tr>
+                    <tr>
+                        <td>Shipped to</td>
+                        <td id="msgship"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
