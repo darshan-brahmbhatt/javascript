@@ -1,0 +1,52 @@
+Javascript Output Properties and Methods
+
+
+
+-> Javascript is a clint side scripting language that handels the clint interactions on clint
+   browser it provides various properties and methods that are used to render output onto beowser.
+
+-> Ways and methods to print Output in Javascript
+   1) alert("...")
+   2) confrim()
+   3) document.write()
+   4) innerHtml()
+   5) innerText()
+   6) console.log()
+
+
+-> 1) alert("...")
+
+    - pops up a message box with output meassage.
+    - it will not allow you to perform any task untill you press "ok" or confirm the message.
+
+     Syntax:-    alert("....")
+
+
+-> 2) confrim()
+
+     - It is an output funcation similar to alert function but can confirm user action with "ok" and "cancle".
+     - It is a boolean Funcation that returns "True on ok" and "false on cancel".
+
+
+-> 3) document.write()
+
+     - It is an output funcation of document object that prints the output in same page but on a new screen.However the output is
+       tamporary
+      and it is cleaned up automatically when you reload the page. it allows to use html markup for formatting the output.
+
+     NOTE: alert() and confrim() will not allow any markup to format the message.
+
+-> 4) InnerHtml="..."
+
+     - It is a property used with html elements that can presant text and it also allows various formats for text by using markup or 
+       formatting funcation.
+
+ 
+-> 5) InnerText="..."
+     
+     - It is similar to InnerHTML but will not allow any formats with markup or function.
+
+-> 6) console.log()
+
+     - it is an output function used in javascript to print the output in browser console which is available in the browser debugger thaqt 
+       you can invoke by using F12 funcation key.

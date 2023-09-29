@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document.Write</title>
+    <script>
+        function krishna(){
+            Darshan = document.getElementById("EnterName").value;
+            hi = document.write("Krishna Bless you " + Darshan);
+        }
+
+        function Checkgender(){
+            let person =document.getElementById("gender").value;
+            msg=document.write("check only one "+person);            
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+    Enter Your Name: 
+    <input type="text" id="EnterName" >
+    <input type="button" value="Submit"onclick="krishna()">
+    <br>
+    <div id="hi"></div>
+    <br><br><br>
+
+    Male:<input type="checkbox" id="gender">
+    Female:<input type="checkbox" id="gender">
+    <input type="button" value="Submit" onclick="Checkgender()">
+    <div id="msg"></div>
+
+</form>
+</body>
+</html>

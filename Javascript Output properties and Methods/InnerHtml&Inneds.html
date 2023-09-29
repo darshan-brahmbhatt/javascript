@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHtml & InnedText Methods</title>
+
+    <script>
+        // function krishna() {
+        //     darshan = confirm("do you trust on krishna");
+        //     mag = document.getElementById("message");
+        //     if (darshan == true) {
+        //         mag.innerText = "you are on right path";
+        //     }
+        //     else {
+        //         mag.innerHTML = "<font color='blue'> You ARE ON WRONG PATH </font>";
+        //     }
+
+        // }
+        function radhaji(){
+            let krishna = confirm("bhakti kare che?");
+            bhakt=document.getElementById("message");
+            if(krishna==true){
+                bhakt.innerText="ha kru chu"
+            }
+            else{
+                bhakt.innerText="nathi karto joiae atli"
+            }
+        }
+
+        function math (){
+           let x=document.getElementById("number").value;
+           message=document.getElementById("div2");
+           if(x< 10,x !=5 == true){
+            message.innerText="you entered true value"+x;
+
+           }
+           else{
+            message.innerText="you entered wrong value"+x;
+           }
+        }
+    </script>
+
+</head>
+
+<body onload="radhaji()">
+    <div id="message">
+       
+    </div>
+    <div id="div2">
+        <form action="">
+            <input type="text" id="number">
+            <input type="button" value="check Number" onclick="math()">
+        </form>
+    </div>
+
+</body>
+
+</html>

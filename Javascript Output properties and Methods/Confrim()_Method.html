@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confrim output properties</title>
+    <script>
+        function DeleteClick(){
+            let d= confirm("Check krishna is with you or not");
+            // (d==true)? alert("Your File is Deleted") : alert("Action Cancled");
+            (d==true)? alert("Krishna is with you") : alert ("krishna is always with you")
+
+        }
+    function RadheRadhe(){
+        let R = confirm("Say Radhe - Radhe!");
+        (R==true)? alert("Well-done you just Read Radhe - Radhe!") : alert ("Now you also read Radhe - Radhe");
+    }
+
+    </script>
+</head>
+<body>
+    <input type="button" value="Krishna" onclick="DeleteClick()">
+
+    <input type="button" value="Submit" onclick="RadheRadhe()">
+    
+</body>
+</html>
