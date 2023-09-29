@@ -1,0 +1,77 @@
+=>Javascript Variables
+
+-> variables are simpley storage locations in memory where you can store a value and use it as a part of any expression. 
+-> Javacript variables are implicitly typed. that data type of variable will be determind according to the value assigned. They do not 
+   have any pre-defined datatypes.
+-> Javascript allows to use variable dairectly without defining it. if no t in strict mode.
+   syntax:
+           x = 10;  // consider it as a integer
+           x = "krishna" // considar it as a string 
+           x = true; // considar it as a boolean
+
+-> Javascript variables must be definied if it is strict mood "use strict"
+
+-> Javascript variables are decelerad by using following keywords.
+      1) Var
+      2) let
+      3) const
+
+ 1) Var:
+
+-> var is a used to define function scope variable. it is accessible any where within the function.
+ NOTE: VAR CAN NOT BE DEFINED OUTSDIDE OF FUNCTION.
+
+2) let:
+
+-> let is used to define a block scope variable, so that it is not accessible outside the specified block.
+-> The variables declared using "var" and "let" will allow shadowing, which is the process of defining same name identifier with different
+    value.
+
+3) const:
+
+-> The keyword "const" is used to declare a constant value that cannot be overridden. which means it will not allow shadowing.
+-> for example is i entered "const a = 20" and then later in code i entered "const 1 =40;" it means code is invalide and it will not show
+   new value.
+
+
+         KEYWORD        SCOPE               SHADOWING
+->         var            function            yes
+->         let            block               yes
+->         const          block               no  
+
+
+
+
+-> Javascript variables supports hoisting("hoisting means you can declare variable anywhere inside funcation"), which is a process used by 
+   translator where it will process the code declaration followed by code rendering. irrespective of the sequential order of the 
+   statements. 
+
+
+=> THE GLOBAL SCOPE FOR VARIABLE
+
+-> The global scope for variable is defined by declaring it outside of function and within the <script> element. (element means tag).
+
+=> a global scope for variable can be defined within function by using the keyword "window". EXAMPLE "window.x"
+
+
+=> JAVASCRIPT variables are case-sensitive. 
+
+     syntax: 
+         const x=10; // this syntax is valid because it is small "x"
+         const X=10; // this syntax is valid because it is capital "X"
+         this both are deffirent identifier in javascript.
+    
+     EXAMPLE:
+               var name="darshan";     // this both are correct
+               var Name="brahmbhatt";  //
+
+
+=> A javascript variable name must start with alphabet or with underscore ("_")
+         EXAMPLE:
+                   var name;        //  Valid (Because it starts with alphabet)
+                   var _name;       //  Valid  (Because it starts with underscore "_" )
+                   var 2ndname;     //  Invalid (Because it start with number.[variable name can not start with number or any other sign])
+                   var first name;  //  Invalid (because there should be no space beetween two words or you need to joint them with 
+                                        underscore (_)
+
+
