@@ -1,0 +1,113 @@
+JAVASCRIPT DATATYPES
+
+-> A datatype determines the type of value that can be stored in a reference.
+-> javascript references are implicitly typed their datatype will be determined according to value.
+-> The datatype supported by the javascript to store values in a reference are classified into two types.
+    1) Primitive types
+    2) Non- primitive types
+    
+1) primitive types:-
+-> The primitive types are stored in memory swtack.
+-> The stack is accessible with the mechanism "last in first out (LIFO)" 
+-> They have a fixed value and the range of value changes according to the standardization.
+-> A single meomery space is allocated to store the value and variable directly holds the value.
+-> if you assign the variable to another variables then the same value will be stored.
+-> The primitive types are created at compile time and stored in a stack. Hence they are also known as value types.
+-> The javascript value types are
+    1) Number type
+    2) String type
+    3) Boolean type
+    4) Null type
+    5) Undefined type
+
+1) Number type
+
+-> Example: var x=-10; // signed integer
+            var x=10; // unsigned integer
+-> A number type in javascript is used to specify signed or unsigned integer.
+-> Syntax:
+       var x=-10; // signed integer
+       var x=10; // unsigned integer
+-> A number type can also be floating point or decimal value.
+   means syntax:
+          var x=4.5;       //floating-point
+          var x=12.57578; //decimal point
+-> we no need to define datatypes it will automatically understand.
+-> A number type in javascript can also refer to exponent value.
+    syntax: 
+         var x=2e3; // 2*10(10*10*10) this is a exponental value
+-> A string represantation starting with number type value can be convertad into a number in javascript by using the methods.
+
+         1) parseInt()
+         2) parseFloat()
+      eg:
+         var a="10AB";
+         var b="20";
+         var c= parseInt(a)+parseInt(b);
+        document.write("c: "+c) // it will show output as a c=30 
+
+->      you can not covert string represantator which starts with alphabet 
+        EXAMPLE: var a= "ab10"  // invalid
+
+2) String type
+-> A string is a group of a characteres enclosed in quotes " " , ' ' ,.(either is single quote or double quote)
+-> The quotes include:
+      1) " " (Dobule quote)
+      2) ' ' (single quote)
+-> The single quotes are must be used for substrings.
+   Syntax: 
+         onclick= "alert('hello!');
+-> A string representation can use spacial characters but compiler or interpreter cannot print certain type of spacial characters.
+   It requires the use of escape sequence characters.
+       syntax: 
+              Escape sequence          prints
+               \\                      \
+               \"                      "
+IF I WANT TO PRINT BACKSLASH (\) IT WILL NOT PRINT BY COMPILER SO WE NEED ESCAPE SEQUENCE TO PRINT IT LIKE \\ AND IT WILL PRINT (\) SINGLE
+SLASH. SAME THING APPLIES TO DOUBLE QUOTES IF I WANT TO PRINT (") IT WONT PRINT TO PRINT THIS I NEED TO USE ESCAPE SEQUENCE \" AND IT WILL
+PRINT " (DOUBLE QUOTE)
+
+
+3) Boolean type
+-> A Boolean type in javascript stores either true or false.
+-> The Boolean values are keywords "true/false".
+-> The boolean conditions are dairectly sastified by using the keywords true or false.
+     syntax:
+       var x=true;
+       if (x==true)
+       {
+       alert("valid");
+        }
+
+4) Null type
+-> The null type is a primitive type which specifies that a reference is not created dynamically.
+-> The keyword null is returned when reference is not defined.
+-> The keyword null is used to verify whether reference is defined or not.
+-> If a value is not specified in any reference then it is verifies by using empty " ".
+     syntax:
+              var krishna =" ";
+-> If a reference is not defined you can verify by using null.
+       syntax:
+       krishna==null; //condition will return true or false. if it returns true it means krishna variable is not-defined. if it returns 
+                        flase it means it is defined.
+
+5) Undefined type
+-> Javascript variables are implicitly typed.
+-> The datatype will be determined according to the value assigned.
+-> If value is not defined to any reference then it will return undefined.
+      syntax:
+            var name=""; // javascript automatically understand it as a String 
+            var name=10; // javascript automatically understand it as a integer (number);
+            var name=    // Undefined
+-> The keyword undefined is used to verify whether a value is defined for any reference.
+                    name==undefined // true or false
+
+
+-> SUMMARY
+
+         DATATYPE                DESCRIPTION
+1)       String                  Represents sequence of characters
+2)       Number                  Represents numeric values
+3)       Boolean                 Represents boolean value either true or false
+4)       Null                    Represents null    i.e no reference at all
+5)       Undefined               Represents undefined values
