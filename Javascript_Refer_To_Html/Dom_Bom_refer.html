@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referance of Dom and Bom</title>
+    <script>
+        function picture(){
+            window.document.images[0].src="wallpaperflare.com_wallpaper.jpg" 
+            window.document.forms[0].elements[1].value="Submit";
+            window.document.forms[0].elements[2].value="you are right";
+            window.document.forms[1].elements[0].value="click here";
+        }
+
+    </script>
+</head>
+<body onload="picture()">
+    <div>
+        <img width="500px", border="10px">
+    </div>
+    <form action="/">
+        Name: <input type="text">
+        <input type="button">
+        <input type="text">
+    </form>
+    <form action="">
+        <input type="button" value="">
+    </form>
+</body>
+</html>
