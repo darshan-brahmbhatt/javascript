@@ -1,0 +1,6 @@
+step 1 : create or change file in vscode.
+step 2 : open git bash. 
+step 3 : direct to your project folder.
+step 4 : use "git status" command to see changes.
+step 5 : use 'git add "file_name"'/ git add -vA  
+step 6 : use 'git commit "file_name"'
