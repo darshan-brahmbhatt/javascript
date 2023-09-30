@@ -4,3 +4,5 @@ step 3 : direct to your project folder.
 step 4 : use "git status" command to see changes.
 step 5 : use 'git add "file_name"'/ git add -vA  
 step 6 : use 'git commit "file_name"'
+step 7 : Press "i" for insert mode and and write a messege and press ESC to exit from Inser mode and then press :wq
+step 8 : git push 
